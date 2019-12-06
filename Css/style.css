@@ -1,0 +1,87 @@
+body{
+   background-color: #24282E;
+}
+
+.title .container{
+   color: white;
+}
+
+.jumbotron{
+   color: white;
+   text-align: center;
+   padding-top: 325px;
+   height: 750px;
+   background-image: url("../Images/cover.png");
+   background-size: cover;
+}
+
+.container .aboutMe{
+border: white;
+color: white;
+}
+
+.aboutMe h2{
+   text-align: right;
+}
+
+.aboutMe p{
+   text-align: left;
+}
+
+.projects h1{
+  color: white;
+}
+
+hr{
+   border-top: 1px solid white;
+   margin: 5rem 0;
+   width: 75%;
+   margin-left: 12%;
+}
+
+.projects .col-lg-3{
+   color: white;
+}
+
+footer{
+
+   background-color: #343a40;
+   height: 75px;
+}
+
+footer .contact{
+   color: white;
+
+}
+
+footer .socialMedia{
+   color: white;
+}
+
+.typewriter-text {
+   display: inline-block;
+   overflow: hidden;
+   letter-spacing: 2px;
+   animation: typing 1.5s steps(20, end), blink .60s step-end infinite;
+   white-space: nowrap;
+   border-right: 3px solid white;
+   box-sizing: border-box;
+}
+
+@keyframes typing {
+   from { 
+       width: 0% 
+   }
+   to { 
+       width: 50% 
+   }
+}
+
+@keyframes blink {
+   from, to { 
+       border-color: transparent 
+   }
+   50% { 
+       border-color: white; 
+   }
+}

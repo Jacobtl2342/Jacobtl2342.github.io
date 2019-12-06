@@ -4,44 +4,176 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap & other CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/styles.css">
-    <title>Jacob.dev</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Jacob Lopez</title>
   </head>
+
   <body>
+
+    <header>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!--brand-->
-        <a class="navbar-brand" href="">Jacob.Dev</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navication">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-           <!--Nav bar-->
-           <ul class="navbar-nav ml-auto">
-               <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="/Views/projects.html">Projects</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="/Views/about.html">About</a>
-               </li>
-           </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <!--brand-->
+      <a class="navbar-brand" href="">Jacob Lopez</a>
+      <!--Toggler-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navication">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--links-->
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resume.html">Resume</a>
+          </li>
+        </ul>
        </div>
     </nav>
+    </header>
     
-    <h1>Home page.</h1>
+    <main role="main">
+      <!--Title-->
+      <section class="jumbotron">
+        <div class="container typewriter">
+          <h1 class="jumbotron-heading typewriter-text">Code What Matters.</h1>
+        </div>
+      </section>
+      
+      <!--About me-->
+      <section class="container aboutMe">
+        <div class="row featurette aboutMe">
+          <div class="col-sm-2 col-md-6">       
+          <h2>Hi, I'm Jacob, a Software Developer from Chicago, IL</h2>     
+          </div>  
+          <div class="col-sm-2 col-md-6">      
+            <p>I am a passionate developer not only ready to begin my career, but continue to grow and learn.
+              While I currently hold a position as Lead Tech at an IT solutions company, I hope to tie my client facing skills
+              with my computer science background and be the most effective devloper I can be. 
+              
+            </p>      
+          </div>  
+        </div>
+      </section>
 
 
+      <hr class="featurette-divider">
 
+
+      <!--Projects-->
+      <section class="container">
+        <!--section title-->
+        <div class="projects">
+          <h1>Projects</h1>
+        </div>
+        <!--Begining of projects list-->
+        <div class="row">
+          <!--Project 1-->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class=" card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text"><strong>Verde Holistic Wellness Studio</strong><br>
+                 Built in WP w/ custom templates, this project is less an example of my technical skill, but of my design ability and ability to bring a clients vision to life                 <br></p>
+                 <a href="http://verdewm.com/" target="_blank"><button type="button" class="btn btn-primary">View Site</button></a>
+              </div>
+            </div>
+          </div>
+          <!--Project 1 end-->
+
+          <!--Project 2-->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text"><strong>Role:</strong> </p>
+                <p class="card-text">Here will be a quick general descripton of the project and my role.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2">View More</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project1Title" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <!--Modal header-->
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="project2Title">Project 2</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <!--Modal body-->
+                          <div class="modal-body">
+                            For this project ...
+                          </div>
+                          <!--Modal footer-->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Project 2 end-->
+
+          <!--Project 3-->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text"><strong>Role:</strong> </p>
+                <p class="card-text">Here will be a quick general descripton of the project and my role.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3">View More</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3Title" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <!--Modal header-->
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="project3Title">Project 3</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <!--Modal body-->
+                          <div class="modal-body">
+                            For this project ...
+                          </div>
+                          <!--Modal footer-->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Project 3 end-->
+
+        </div>
+        <!--End of projects-->
+
+
+      </section>
+      <!--End projects-->
+    </main>
 
     <!-- jQuery first, then Bootstrap JS-->
-    <script src="/Scripts/scripts.js"></script>
+    <script src="Scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ae2f0a1054.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
