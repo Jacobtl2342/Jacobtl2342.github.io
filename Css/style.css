@@ -10,7 +10,7 @@ body{
    color: white;
    text-align: center;
    padding-top: 325px;
-   height: 750px;
+   height: 850px;
 
    background-image: url("../Images/cover.png");
    background-size: cover;
@@ -111,4 +111,17 @@ a {
 
 .table{
    color: white;
+}
+
+
+.hover10 figure svg {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover10 figure:hover svg {
+	-webkit-filter: grayscale(100%) blur(3px);
+   filter: grayscale(100%) blur(3px);
+   cursor: pointer;
 }
