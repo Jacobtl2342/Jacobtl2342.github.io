@@ -9,13 +9,17 @@ body{
 .jumbotron{
    color: white;
    height: 850px;
+   text-align: center;
    background-image: url("../Images/cover.png");
    background-size: cover;
 }
 
 .jumbotron div{
    color: white;
-   text-align: center;
+   padding-top: 325px;
+}
+
+.jumbotron .resume{
    padding-top: 325px;
 }
 
