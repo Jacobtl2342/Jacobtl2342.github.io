@@ -8,13 +8,17 @@ body{
 
 .jumbotron{
    color: white;
-   text-align: center;
-   padding-top: 325px;
    height: 850px;
-
    background-image: url("../Images/cover.png");
    background-size: cover;
 }
+
+.jumbotron div{
+   color: white;
+   text-align: center;
+   padding-top: 325px;
+}
+
 
 .container .aboutMe{
 border: white;
@@ -66,9 +70,9 @@ image{
 .typewriter-text {
    display: inline-block;
    overflow: hidden;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
    animation: typing 1.5s steps(20, end), blink .60s step-end infinite;
-   white-space: nowrap;
+   white-space: pre;
    border-right: 3px solid white;
    box-sizing: border-box;
 }
@@ -81,7 +85,8 @@ a {
    padding-left:15px;
    padding-right:15px;
  }
-
+ 
+/* Jumbotron Typing Animation */
 @keyframes typing {
    from { 
        width: 0% 
