@@ -67,6 +67,10 @@ image{
    float: right;
 }
 
+footer .navbar-nav{
+   flex-direction:row;
+}
+
 .typewriter-text {
    display: inline-block;
    overflow: hidden;
