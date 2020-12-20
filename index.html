@@ -4,18 +4,189 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob The Dev</title>
-    <link rel="stylesheet" type="text/css" href="./Css/style.css">
-    <script defer src="./Scripts/script.js"></script>
+    <meta name="description" content="This is the portfolio and online resume of Jacob Lopez, a full stack web developer">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script defer src="./scripts/script.js"></script>
   </head>
   <body>
+    <nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div class="logo">
+        <h4>The Nav</h4>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#about" class="nav-links">About</a>
+        </li>
+        <li>
+          <a href="#experience" class="nav-links">Experience</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-links">Projects</a>
+        </li>
+        <li>
+          <a href="#education" class="nav-links">Education</a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-links">Skills</a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-links">Resume</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-links">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <header>
-
+      <h1>Code what matters</h1>
     </header>
     <main>
-      <h1>Hello, World!</h1>
+      <section id="about">
+        <h2>About</h2>
+        <article>
+          <p>Full Stack Web Developer based in Chicago</p>
+        </article>
+      </section>
+      
+      <section id="experience">
+        <h2>Experience</h2>
+        <!--Job 1-->
+        <div class="card">
+          <!--Top row-->
+          <div class="card-row">
+            <h3>Chicago Info Tech</h3>
+            <p>Lead Tech</p>
+          </div>
+          <hr>
+          <div class="card-content">
+            <!--Content-->
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>
+                <p>Design, develop, and maintain websites leveraging the WordPress CMS</p>
+              </li>
+              <li>
+                <p>Training and integration of new employees, remotely and in person</p>
+              </li>
+              <li>
+                <p>Develop and maintain client relationships to understand, meet, and exceed their business needs</p>
+              </li>
+            </ul>
+            <h4>Accomplishments</h4>
+            <ul>
+              <li>
+                <p>Designed and developed website for Verde Wellness</p>
+              </li>
+              <li>
+                <p>Designed and devloped website for local engineer union</p>
+              </li>
+            </ul>
+          </div>
+          <!--bottom of card-->
+          <div class="card-bottom">
+            Oct 2016 - Current | Chicago, IL
+          </div>
+        </div>
+        <!--Job 2-->
+        <div class="card">
+          <!--Top row-->
+          <div class="card-row">
+            <h3>CNA Insurance</h3>
+            <p>Intern</p>
+          </div>
+          <hr>
+          <div class="card-content">
+            <!--Content-->
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>
+                <p>Design, develop, and maintain websites leveraging the WordPress CMS</p>
+              </li>
+              <li>
+                <p>Training and integration of new employees, remotely and in person</p>
+              </li>
+              <li>
+                <p>Develop and maintain client relationships to understand, meet, and exceed their business needs</p>
+              </li>
+            </ul>
+            <h4>Accomplishments</h4>
+            <ul>
+              <li>
+                <p>Presented to CIO and project managers the software that would be implimented, and how it would improve efficiency company wide</p>
+              </li>
+            </ul>
+          </div>
+          <!--bottom of card-->
+          <div class="card-bottom">
+            May 2016 - June 2016 | Chicago, IL
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <p>
+            This is the projects section. It will detail projects I've worked on at school and on the side as passion/learning projects will 
+            likely fill it with dummy content until my new projects are ready. Will be in a card format similar to Job experience, links to code
+            and live project (if hosted) (popup modal?).
+          </p>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+                <!--Job 1-->
+                <div class="card">
+                  <!--Content-->
+                  <div class="card-content">
+                    <h4>DePaul University</h4>
+                    <p>Chicago, IL</p>
+                    <ul>
+                      <li>
+                        <p>B.A. in Computer Science</p>
+                      </li>
+                      <li>
+                        <p>Minor in Software Engineering</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <article>
+          <p>The skills section will list the various skills I have gained from school and continued learning.</p>
+        </article>
+      </section>
+
+      <section id="resume">
+        <h2>Formal Resume</h2>
+        <article>
+          <p>Here there will be a link or download button for my formal resume</p>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <article>
+          <p>Either a contact form, or simply list contact info</p>
+        </article>
+      </section>
     </main>
     <footer>
-
+      <h2>Footer</h2>
+      <div class="social-media">
+        <p>Social media icons may appear here.</p>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,157 @@
+/*Mobile First Design*/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}
+/*Header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../images/cover.png");
+    background-position: center;
+}
+header h1{
+    color: white;
+}
+/*Nav*/
+nav{
+    background-color: #2376ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    min-height: 8vh;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: none;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+
+/*Main content*/
+section h2{
+    padding: 1em;
+    margin: 0;
+    font-weight: 100;
+    color: white;
+    background-color: #839b97;
+
+}
+
+article{
+   padding: 1em;
+}
+
+/*Footer*/
+footer{
+    border: 2px solid black;
+}
+
+/*Cards*/
+.card{
+    width: 75%;
+    margin: 50px auto 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.card-row{
+    padding: 1em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+hr{
+    width: 95%;
+}
+
+.card-content{
+    padding: 1em;
+}
+
+.card-bottom{
+    background-color: #eeeeee;
+    padding: 1em;
+}
+
+/*Desktop layout*/
+@media (min-width: 768px) {
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer";
+
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    }
+
+    /*Grid areas*/
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+        justify-content: unset;
+        background-color: #2376ae;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        width: 200px
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .burger{
+        display: none;
+    }
+
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        border: 2px solid black;
+    }
+
+}
