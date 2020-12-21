@@ -13,7 +13,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url("../images/cover.png");
+    background-image: url("../Images/cover.png");
     background-position: center;
 }
 header h1{
