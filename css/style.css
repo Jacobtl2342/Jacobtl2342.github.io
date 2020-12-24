@@ -15,7 +15,6 @@ body{
     "sideNav main   main"
     "sideNav main   main"
     "sideNav footer footer";
-
     font: 1em/1.3 Arial, Helvetica, sans-serif;
 }
 
@@ -37,7 +36,6 @@ nav{
     grid-area: nav;
     background-color: lightgreen;
     display: none;
-    
 }
 
 .sideNav{
@@ -50,12 +48,15 @@ nav{
     width: 200px;
     height: 100vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    transition: 0.5s;
 }
 
-.nav-links{
+.nav-link{
     display: flex;
     flex-direction: column;
     margin-top: 1em;
+    transition: 0.5s;
+
 }
 
 .nav-links li{
@@ -66,6 +67,13 @@ nav{
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
+    padding: 1em;
+
+}
+
+.nav-link:hover{
+    background-color: #839b97;
+    border-radius: 10px;
 }
 
 .logo{
@@ -82,11 +90,9 @@ main{
 /*Main content*/
 section h2{
     padding: 1em;
-    margin: 0;
     font-weight: 100;
     color: white;
     background-color: #839b97;
-
 }
 
 article{
@@ -130,14 +136,18 @@ footer{
 }
 
 @media screen and (max-width: 550px){
+    *{
+        scroll-margin-top: 9.5vh;
+    }
     body{
         grid-template-columns: 1fr;
-        grid-template-rows: 10vh 100vh auto auto;
+        grid-template-rows: 10vh 90vh auto auto;
         grid-template-areas: 
         "nav nav"
         "sideNav header"
         "sideNav main"
         "sideNav footer";
+
     }
 
     nav{
