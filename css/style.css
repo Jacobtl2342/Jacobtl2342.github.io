@@ -111,6 +111,7 @@ footer{
     grid-template-rows: 50px auto 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     background-color: white;
+    border-radius: 25px;
 }
 
 .card-top{
@@ -120,6 +121,8 @@ footer{
     align-items: baseline;
     padding: 1em;
     color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .card-content{
@@ -137,6 +140,8 @@ footer{
     align-items: baseline;
     padding: 1em;
     background-color: #eeeeee;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #infoTech-top{
