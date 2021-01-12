@@ -95,7 +95,8 @@ section h2{
 }
 
 article{
-   padding: 1em;
+    width: inherit;
+    margin: 0 auto;
 }
 
 /*Footer*/
@@ -144,12 +145,27 @@ footer{
     border-bottom-right-radius: 25px;
 }
 
+.skill-card{
+    width: 80%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background-color: white;
+    border-radius: 25px;
+}
+
+
 #infoTech-top{
     background-color: #55A3D6;
 }
 
 #cna-top{
     background-color: #E51B24
+}
+
+#project-top{
+    background-color: lightgreen;
 }
 
 #depaul-top{
@@ -160,6 +176,47 @@ footer{
 footer{
     grid-area: footer;
     background-color: lightgray;
+}
+
+.skill-card{
+    width: 80%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background-color: white;
+    border-radius: 25px;
+}
+
+#frontend-top{
+    background-color: #55A3D6;
+}
+
+.skill-icon{
+   text-align: center;
+   padding-top: 1em;
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+.skill-card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
 }
 
 @media screen and (max-width: 550px){
