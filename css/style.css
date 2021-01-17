@@ -33,9 +33,9 @@ header h1{
     color: white;
 }
 
+/*Nav and initial side nav styling*/
 nav{
     grid-area: nav;
-    background-color: lightgreen;
     display: none;
 }
 
@@ -81,12 +81,12 @@ nav{
     font-size: 20px;
 }
 
+/*Main content*/
 main{
     grid-area: main;
     background-color: lightyellow;
 }
 
-/*Main content*/
 section h2{
     padding: 1em;
     font-weight: 100;
@@ -99,10 +99,19 @@ article{
     margin: 0 auto;
 }
 
+#project-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 /*Footer*/
 footer{
+    grid-area: footer;
+    background-color: lightgray;
     border: 2px solid black;
 }
+
+/********* Section Content **********/
 
 /*Cards*/
 .card{
@@ -145,17 +154,6 @@ footer{
     border-bottom-right-radius: 25px;
 }
 
-.skill-card{
-    width: 80%;
-    margin: 50px auto 50px auto;
-    display: grid;
-    grid-template-rows: 50px auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    background-color: white;
-    border-radius: 25px;
-}
-
-
 #infoTech-top{
     background-color: #55A3D6;
 }
@@ -171,13 +169,7 @@ footer{
 #depaul-top{
     background-color: #225B94;
 }
-
-
-footer{
-    grid-area: footer;
-    background-color: lightgray;
-}
-
+/*Skill card*/
 .skill-card{
     width: 80%;
     margin: 50px auto 50px auto;
@@ -188,8 +180,9 @@ footer{
     border-radius: 25px;
 }
 
-#frontend-top{
-    background-color: #55A3D6;
+.skill-card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
 }
 
 .skill-icon{
@@ -214,11 +207,40 @@ figure figcaption {
     text-align: center;
 }
 
-.skill-card-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+#frontend-top{
+    background-color: #55A3D6;
 }
 
+/*Projects card*/
+.project-card{
+    width: 300px;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background-color: white;
+    border-radius: 25px;
+}
+
+.project-card-content p{
+    padding: 1em;
+}
+
+.project-image{
+    width: 100%;
+    height: 150px;
+}
+
+#project1{
+    background-color:#23ae58 ;
+}
+
+#project2{
+    background-color: #839b97;
+}
+
+
+/*Mobile layouts*/
 @media screen and (max-width: 550px){
     *{
         scroll-margin-top: 9.5vh;
@@ -243,13 +265,16 @@ figure figcaption {
         height: 10vh;
         padding: 2em;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
+        background-color: #23ae58;
     }
 
     .navToggle{
         background: transparent;
         border: none;
         font-size: 25px;
+        color: white;
     }
+
 
     .sideNav{
         top: 10vh;
